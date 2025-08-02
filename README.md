@@ -39,7 +39,8 @@ This step was used to inspect the data. You do not need to run it again as the f
 python data_prep.py
 
 3. Run the Model Fine-Tuning (Optional)
-The fine-tuned model is already included in the financial_summarizer_model directory. You only need to run this script if you want to retrain the model from scratch. Warning: This is computationally expensive and will take many hours on a CPU. It is recommended to run this on a GPU.
+The fine-tuned model is already included in the financial_summarizer_model directory. You only need to run this script if you want to retrain the model from scratch.
+Warning: This is computationally expensive and will take many hours on a CPU. It is recommended to run this on a GPU.
 
 python fine_tune.py
 
