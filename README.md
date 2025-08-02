@@ -23,9 +23,9 @@ This project is a complete, end-to-end application that uses a fine-tuned BART L
 * └── README.md                     <-- This file
 
 # How to Run This Project
-* 1. Setup the Environment
+*1. Setup the Environment
 First, create a Python environment and install the required dependencies.
-*  Create a virtual environment (optional but recommended)
+* Create a virtual environment (optional but recommended)
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 * Install all required packages
@@ -53,5 +53,6 @@ This launches the interactive Streamlit web application.
 
 Open a NEW terminal and run this command
 streamlit run streamlit_app.py
+
 
 
