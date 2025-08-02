@@ -13,14 +13,14 @@ This project is a complete, end-to-end application that uses a fine-tuned BART L
 * Modular Pipeline: The project is broken into clear, logical scripts for data preparation, model training, backend logic, and frontend UI.
 
 #  Project Structure
-financial-summarizer/
-├── financial_summarizer_model/   <-- Saved fine-tuned model files
-├── app.py                        <-- Flask backend API
-├── streamlit_app.py              <-- Streamlit frontend UI
-├── fine_tune.py                  <-- Script for model fine-tuning
-├── data_prep.py                  <-- Script for data downloading & processing
-├── requirements.txt              <-- Python dependencies
-└── README.md                     <-- This file
+*  financial-summarizer/
+* ├── financial_summarizer_model/   <-- Saved fine-tuned model files
+* ├── app.py                        <-- Flask backend API
+* ├── streamlit_app.py              <-- Streamlit frontend UI
+* ├── fine_tune.py                  <-- Script for model fine-tuning
+* ├── data_prep.py                  <-- Script for data downloading & processing
+* ├── requirements.txt              <-- Python dependencies
+* └── README.md                     <-- This file
 
 # How to Run This Project
 * 1. Setup the Environment
@@ -33,26 +33,25 @@ pip install -r requirements.txt
 
 *  2. Run the Data Preparation (Optional)
   This step was used to inspect the data. You do not need to run it again as the fine-tuning script handles data loading automatically.
-
 python data_prep.py
 
 *  3. Run the Model Fine-Tuning (Optional)
 The fine-tuned model is already included in the financial_summarizer_model directory. You only need to run this script if you want to retrain the model from scratch.
 Warning: This is computationally expensive and will take many hours on a CPU. It is recommended to run this on a GPU.
-
 python fine_tune.py
 
 *  4. Start the Backend API
 This server loads the fine-tuned model and waits for requests from the frontend.
 
-*  Run this command in a terminal
+ Run this command in a terminal
 python app.py
 
-*  Leave this terminal running.
+ Leave this terminal running.
 
 * 5. Start the Frontend UI
 This launches the interactive Streamlit web application.
 
-*  Open a NEW terminal and run this command
+Open a NEW terminal and run this command
 streamlit run streamlit_app.py
+
 
