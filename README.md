@@ -42,17 +42,16 @@ python fine_tune.py
 
 *  4. Start the Backend API
 This server loads the fine-tuned model and waits for requests from the frontend.
-
- Run this command in a terminal
+Run this command in a terminal
 python app.py
-
- Leave this terminal running.
+Leave this terminal running.
 
 * 5. Start the Frontend UI
 This launches the interactive Streamlit web application.
 
 Open a NEW terminal and run this command
 streamlit run streamlit_app.py
+
 
 
 
